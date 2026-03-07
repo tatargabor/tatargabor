@@ -16,7 +16,6 @@ My main project: give it a spec, get merged features. wt-tools turns specificati
 | [wt-project-base](https://github.com/tatargabor/wt-project-base) | Base project knowledge plugin — common rules for all project types |
 | [wt-project-web](https://github.com/tatargabor/wt-project-web) | Web project knowledge plugin — web-specific rules, templates, patterns |
 | [wt-spec-capture](https://github.com/tatargabor/wt-spec-capture) | Chrome extension — capture business specs from existing websites |
-| [mcp-rackforest](https://github.com/tatargabor/mcp-rackforest) | MCP server for Rackforest DNS management |
 
 ### How it works
 
