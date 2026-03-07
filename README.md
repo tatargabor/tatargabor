@@ -8,10 +8,6 @@ Software engineer building AI-powered development tools at [ITLine Kft.](https:/
 
 My main project: give it a spec, get merged features. wt-tools turns specification documents into parallel, autonomous Claude Code agents that implement, test, and merge — while you sleep.
 
-<a href="https://github.com/tatargabor/wt-tools">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=tatargabor&repo=wt-tools&theme=dark&hide_border=true" />
-</a>
-
 ### The ecosystem
 
 | Repository | Description |
