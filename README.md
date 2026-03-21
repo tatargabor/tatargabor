@@ -14,16 +14,16 @@ Most of what I build will probably become native features eventually. That's the
 spec.md ──► decompose ──► parallel agents ──► merge ──► done
 ```
 
-The ecosystem around it:
+Monorepo with plugin modules:
 
-| Repository | What it does |
+| Path | What it does |
 |---|---|
 | [**set-core**](https://github.com/tatargabor/set-core) | Core — sentinel, orchestration, worktrees, memory, GUI |
-| [set-project-base](https://github.com/tatargabor/set-project-base) | Base project knowledge plugin — common rules for any project |
-| [set-project-web](https://github.com/tatargabor/set-project-web) | Web project plugin — web-specific rules, templates, patterns |
+| `modules/web/` | Web project plugin — Next.js, Playwright, Prisma patterns |
+| `modules/example/` | Reference plugin — Dungeon Builder domain |
 | [set-spec-capture](https://github.com/tatargabor/set-spec-capture) | Chrome extension — capture business specs from existing sites |
 
-Primary focus is web development, but the base tooling works on any codebase.
+Primary focus is web development, but the core tooling works on any codebase. External plugins can extend the framework for any domain.
 
 ---
 
