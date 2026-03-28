@@ -1,30 +1,42 @@
 # Hi, I'm Gabor
 
-I build tools that push Claude Code to its limits — not because it needs fixing, but because I want to see how far it can go.
+I build autonomous orchestration tools for AI-assisted software development. My focus: making Claude Code agents work reliably in parallel — with structure, quality gates, and measurable results.
 
-Most of what I build will probably become native features eventually. That's the point — explore the frontier now, share what works, learn from it either way.
+**Website:** [setcode.dev](https://setcode.dev)
 
 ---
 
 ## What I'm working on
 
-[**set-core**](https://github.com/tatargabor/set-core) — Autonomous multi-agent orchestration for Claude Code. Hand it a spec, get merged features.
+[**SET (Ship Exactly This)**](https://github.com/tatargabor/set-core) — Autonomous multi-agent orchestration for Claude Code.
+
+Give it a spec, get merged features. Parallel agents in git worktrees, 7 quality gates, self-healing sentinel supervisor, deterministic output.
 
 ```
-spec.md ──► decompose ──► parallel agents ──► merge ──► done
+spec.md ──► digest ──► decompose ──► parallel agents ──► verify ──► merge ──► done
 ```
 
-Monorepo with plugin modules:
+**1,295 commits · 134K LOC · 720+ hours autonomous runtime · 363 capability specs**
 
-| Path | What it does |
+### The ecosystem
+
+| Repository | What it does |
 |---|---|
-| [**set-core**](https://github.com/tatargabor/set-core) | Core — sentinel, orchestration, worktrees, memory, GUI |
-| `modules/web/` | Web project plugin — Next.js, Playwright, Prisma patterns |
-| `modules/example/` | Reference plugin — Dungeon Builder domain |
-| [set-spec-capture](https://github.com/tatargabor/set-spec-capture) | Chrome extension — capture business specs from existing sites |
+| [**set-core**](https://github.com/tatargabor/set-core) | Core orchestration engine — sentinel, quality gates, worktrees, memory, web dashboard |
+| [set-spec-capture](https://github.com/tatargabor/set-spec-capture) | Chrome extension — capture specs from existing websites and apps |
+| [set-voice-agent-delivery](https://github.com/tatargabor/set-voice-agent-delivery) | Voice agent — Soniox STT + Google TTS for spec-driven customer interaction |
+| [setcode-www](https://github.com/tatargabor/setcode-www) | Landing page — [setcode.dev](https://setcode.dev) |
 
-Primary focus is web development, but the core tooling works on any codebase. External plugins can extend the framework for any domain.
+Built-in modules: **Web** (Next.js, Prisma, Playwright) ships with set-core. Custom project types (fintech, healthcare, etc.) can be added as plugins.
 
 ---
 
-*Built and used in production by [ITLine Kft.](https://itline.hu)*
+### What I believe
+
+Systems like SET can do the work of a full development team — given proper specifications and well-developed project types. This is the present, not the future.
+
+Don't blame the model for underspecification. 90% of "AI failures" are gaps we left empty. SET exists to enforce structure (OpenSpec), verify output (quality gates), and recover from failures (sentinel + issue pipeline).
+
+---
+
+*Built and used in production by [ITLine Kft.](https://itline.hu) · [gabor@setcode.dev](mailto:gabor@setcode.dev)*
